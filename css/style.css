@@ -58,7 +58,7 @@ nav {
       cursor: pointer;
       transition: .3s; }
       .initial div button:hover {
-        opacity: .7; }
+        background-color: rgba(48, 101, 248, 0.6); }
   .initial img {
     width: 50%; }
 
@@ -152,9 +152,9 @@ nav {
       font-size: 1.8em;
       margin-bottom: 15px; }
     .early-access div p {
+      color: #bfbfbf;
       font-size: .9em;
       width: 92%;
-      opacity: .8;
       letter-spacing: .03em; }
   .early-access input {
     width: 51%;
@@ -177,6 +177,47 @@ nav {
     padding: 0 30px;
     margin-top: 15px; }
     .early-access button:hover {
-      opacity: .7; }
+      background-color: rgba(48, 101, 248, 0.6); }
+
+.footer {
+  background-color: #070439;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: start; }
+  .footer div:last-child {
+    margin-right: 0; }
+  .footer div:nth-child(2) p {
+    cursor: pointer; }
+    .footer div:nth-child(2) p:hover {
+      color: #3065f8; }
+  .footer div {
+    position: relative;
+    margin-right: 16%; }
+    .footer div > img {
+      position: absolute;
+      width: 140px;
+      height: 40px;
+      top: -60px; }
+    .footer div p {
+      color: #bfbfbf;
+      font-size: .9em;
+      margin-top: 16px; }
+      .footer div p img {
+        width: 16px;
+        margin-right: 16px; }
+    .footer div i {
+      color: #bfbfbf;
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 6px;
+      width: 28px;
+      border: 1px solid white;
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer; }
+      .footer div i:hover {
+        color: #3065f8;
+        border-color: #3065f8; }
 
 /*# sourceMappingURL=style.css.map */

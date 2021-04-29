@@ -1,6 +1,6 @@
 
 $primary-color: hsl(243, 87%, 12%);
-$secundary-colo: hsl(238, 22%, 44%);
+$secundary-color: hsl(238, 22%, 44%);
 $accent-blue: hsl(224, 93%, 58%);
 $accent-cyan: hsl(170, 45%, 43%);
 $neutral-blue: hsl(240, 75%, 98%);
@@ -27,7 +27,7 @@ $secundary-font: 'Raleway';
     cursor: pointer;
     transition: .3s;
     &:hover{
-        opacity: .7;
+        background-color: rgba($accent-blue,.6);
     }
 }
 
@@ -183,7 +183,7 @@ nav{
     }
 }
 .early-access{
-    background-color: $secundary-colo;
+    background-color: $secundary-color;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -196,9 +196,9 @@ nav{
             margin-bottom: 15px;
         }
         p{
+            color: $neutral-gray;
             font-size: .9em;
             width: 92%;
-            opacity: .8;
             letter-spacing: .03em;
         }
     }
@@ -212,5 +212,55 @@ nav{
         padding: 0 30px;
         margin-top: 15px;
     }
+}
+.footer{
+    background-color: $primary-color;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: start;
+    div:last-child{
+        margin-right: 0;
+    }
+    div:nth-child(2) p{
+        cursor: pointer;
+        &:hover{
+            color: $accent-blue;
+        }
+    }
+    div{
+        position: relative;
+        margin-right: 16%;
+        & > img{
+            position: absolute;
+            width: 140px;
+            height: 40px;
+            top: -60px;
+        }
+        p{
+            color: $neutral-gray;
+            font-size: .9em;
+            margin-top: 16px;
+            img{
+                width: 16px;
+                margin-right: 16px;
+            }
+        }
+        i{
+            color: $neutral-gray;
+            margin-top: 20px;
+            margin-right: 10px;
+            padding: 6px;
+            width: 28px;
+            border: 1px solid white;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                color: $accent-blue;
+                border-color: $accent-blue;
+            }
+        }
 
+    }
 }
