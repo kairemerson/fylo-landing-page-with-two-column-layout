@@ -39,6 +39,7 @@ nav{
 .initial{
     width: 100%;
     height: 80vh;
+    margin-bottom: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,5 +80,98 @@ nav{
     }
     img{
         width: 50%;
+    }
+}
+.cont-desc{
+    background-color: $neutral-blue;
+    position: relative;
+    & > img{
+        width: 100%;
+        top: -100px;
+        left: 0;
+        position: absolute;
+    }
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+    div{
+        width: 54%;
+        h1{
+            font-size: 2.4em;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+            font-size: .96em;
+            max-width: 500px;
+        }
+        a{
+            color: $accent-cyan;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            position: relative;
+            display: inline-block;
+            width: 168px;
+            &:hover{
+                opacity: .6;
+            }
+            &::after{
+               content: "";
+               background-image: url(../images/icon-arrow.svg);
+               background-size: cover;
+               position: absolute;
+               width: 16px;
+               height: 16px;
+               top: 4px;
+               margin-left: 8px;
+           }
+        }
+        .testimonial{
+            max-width: 300px;
+            height: 200px;
+            margin-top: 30px;
+            background-color: white;
+            padding: 24px;
+            border-radius: 4px;
+            -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+            box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+            img{
+                width: 16px;
+            }
+            p{
+                font-size: .75em;
+                line-height: 1.6em;
+            }
+            #avatar{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        margin: 0;
+                        font-size: .8em;
+                        font-weight: bold;
+                    }
+                    span{
+                        font-size: .6em;
+                    }
+                }
+            }
+        }
+    }
+    img{
+        width: 40%;
     }
 }
