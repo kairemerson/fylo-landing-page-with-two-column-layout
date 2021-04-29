@@ -8,6 +8,29 @@ $neutral-gray: hsl(0, 0%, 75%);
 $primary-font: 'Open Sans';
 $secundary-font: 'Raleway';
 
+@mixin inputStyle {
+    width: 51%;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 20px;
+    &::-webkit-input-placeholder {
+        color: $neutral-gray;
+    }
+}
+@mixin buttonStyle{
+    height: 40px;
+    padding: 0 60px;
+    background-color: $accent-blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        opacity: .7;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -56,26 +79,10 @@ nav{
             margin-bottom: 20px;
         }
         input{
-            width: 51%;
-            height: 40px;
-            margin-right: 10px;
-            padding-left: 20px;
+            @include inputStyle();
         }
-        ::-webkit-input-placeholder {
-            color: $neutral-gray;
-         }
         button{
-            height: 40px;
-            padding: 0 60px;
-            background-color: $accent-blue;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: .3s;
-            &:hover{
-                opacity: .7;
-            }
+            @include buttonStyle();
         }
     }
     img{
@@ -136,9 +143,9 @@ nav{
             background-color: white;
             padding: 24px;
             border-radius: 4px;
-            -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
-            -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
-            box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             img{
                 width: 16px;
             }
@@ -174,4 +181,36 @@ nav{
     img{
         width: 40%;
     }
+}
+.early-access{
+    background-color: $secundary-colo;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    div{
+        width: 42%;
+        h1{
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: .9em;
+            width: 92%;
+            opacity: .8;
+            letter-spacing: .03em;
+        }
+    }
+    input{
+        @include inputStyle();
+        width: 80%;
+    }
+    button{
+        @include buttonStyle();
+        font-size: .8em;
+        padding: 0 30px;
+        margin-top: 15px;
+    }
+
 }

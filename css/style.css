@@ -46,8 +46,8 @@ nav {
       height: 40px;
       margin-right: 10px;
       padding-left: 20px; }
-    .initial div ::-webkit-input-placeholder {
-      color: #bfbfbf; }
+      .initial div input::-webkit-input-placeholder {
+        color: #bfbfbf; }
     .initial div button {
       height: 40px;
       padding: 0 60px;
@@ -110,9 +110,9 @@ nav {
       background-color: white;
       padding: 24px;
       border-radius: 4px;
-      -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5); }
+      -webkit-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
       .description div .testimonial img {
         width: 16px; }
       .description div .testimonial p {
@@ -138,5 +138,45 @@ nav {
             font-size: .6em; }
   .description img {
     width: 40%; }
+
+.early-access {
+  background-color: #585989;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .early-access div {
+    width: 42%; }
+    .early-access div h1 {
+      font-size: 1.8em;
+      margin-bottom: 15px; }
+    .early-access div p {
+      font-size: .9em;
+      width: 92%;
+      opacity: .8;
+      letter-spacing: .03em; }
+  .early-access input {
+    width: 51%;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 20px;
+    width: 80%; }
+    .early-access input::-webkit-input-placeholder {
+      color: #bfbfbf; }
+  .early-access button {
+    height: 40px;
+    padding: 0 60px;
+    background-color: #3065f8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: .8em;
+    padding: 0 30px;
+    margin-top: 15px; }
+    .early-access button:hover {
+      opacity: .7; }
 
 /*# sourceMappingURL=style.css.map */
