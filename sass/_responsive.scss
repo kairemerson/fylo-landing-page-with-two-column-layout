@@ -1,0 +1,123 @@
+@media screen and (max-width: 760px){
+    .container{
+        padding: 3% 5%;
+    }
+    nav{
+        img{
+            width: 80px;
+        }
+        ul{
+            font-size: .8em;
+            li{
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+    .initial{
+        flex-direction: column-reverse;
+        margin-bottom: 20vh;
+        height: auto;
+        div{
+            width: 100%;
+            text-align: center;
+            h1{
+                font-size: 1.8em;
+            }
+            input{
+                width: 80%;
+                margin: 0;
+            }
+            button{
+                width: 80%;
+                margin-top: 20px;
+            }
+            p{
+                width: 100%;
+            }
+        }
+        img{
+            width: 90%;
+            margin-top: 8vh;
+            margin-bottom: 20px;
+        }
+    }
+    .cont-desc{
+        & > img{
+            top: -58px;
+        }
+    }
+    .description{
+        flex-direction: column-reverse;
+        div{
+            width: 100%;
+            h1{
+                font-size: 1.2em;
+                text-align: center;
+                margin-top: 40px;
+            }
+            p{
+                font-size: 1em;
+            }
+            a{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            .testimonial{
+                height: auto;
+                margin: 20px auto;
+                img{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        img{
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+    .early-access{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 30px;
+        div{
+            width: 100%;
+            h1{
+                font-size: 1.2em;
+            
+            }
+            p{
+                width: 100%;
+                margin: 26px 0;
+            }
+            input{
+                margin-right: 0;
+            }  
+            button{
+                margin-top: 10px;
+                width: 80%;
+            }  
+        }
+
+    }
+    .footer{
+        padding: 130px 40px 60px 40px;
+        div{
+            width: 100%;
+            margin-bottom: 30px;
+            & > img{
+                width: 160px;
+                height: auto;
+            }
+            p{
+                font-size: 1em;
+            }
+        }
+        div:last-child{
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+    
+} 

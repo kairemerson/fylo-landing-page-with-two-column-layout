@@ -1,4 +1,5 @@
 
+
 $primary-color: hsl(243, 87%, 12%);
 $secundary-color: hsl(238, 22%, 44%);
 $accent-blue: hsl(224, 93%, 58%);
@@ -66,6 +67,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     div{
         width: 50%;
         h1{
@@ -104,6 +106,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 70px 0;
+    flex-wrap: wrap;
     div{
         width: 54%;
         h1{
@@ -219,6 +222,7 @@ nav{
     padding-bottom: 60px;
     display: flex;
     justify-content: start;
+    flex-wrap: wrap;
     div:last-child{
         margin-right: 0;
     }
@@ -264,3 +268,4 @@ nav{
 
     }
 }
+@import 'responsive';

@@ -30,7 +30,8 @@ nav {
   margin-bottom: 170px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .initial div {
     width: 50%; }
     .initial div h1 {
@@ -75,7 +76,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 0; }
+  padding: 70px 0;
+  flex-wrap: wrap; }
   .description div {
     width: 54%; }
     .description div h1 {
@@ -184,7 +186,8 @@ nav {
   padding-top: 140px;
   padding-bottom: 60px;
   display: flex;
-  justify-content: start; }
+  justify-content: start;
+  flex-wrap: wrap; }
   .footer div:last-child {
     margin-right: 0; }
   .footer div:nth-child(2) p {
@@ -219,5 +222,96 @@ nav {
       .footer div i:hover {
         color: #3065f8;
         border-color: #3065f8; }
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding: 3% 5%; }
+
+  nav img {
+    width: 80px; }
+  nav ul {
+    font-size: .8em; }
+    nav ul li {
+      margin-right: 0;
+      margin-left: 20px; }
+
+  .initial {
+    flex-direction: column-reverse;
+    margin-bottom: 20vh;
+    height: auto; }
+    .initial div {
+      width: 100%;
+      text-align: center; }
+      .initial div h1 {
+        font-size: 1.8em; }
+      .initial div input {
+        width: 80%;
+        margin: 0; }
+      .initial div button {
+        width: 80%;
+        margin-top: 20px; }
+      .initial div p {
+        width: 100%; }
+    .initial img {
+      width: 90%;
+      margin-top: 8vh;
+      margin-bottom: 20px; }
+
+  .cont-desc > img {
+    top: -58px; }
+
+  .description {
+    flex-direction: column-reverse; }
+    .description div {
+      width: 100%; }
+      .description div h1 {
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 40px; }
+      .description div p {
+        font-size: 1em; }
+      .description div a {
+        margin-left: auto;
+        margin-right: auto;
+        display: block; }
+      .description div .testimonial {
+        height: auto;
+        margin: 20px auto; }
+        .description div .testimonial img {
+          margin-bottom: 0; }
+    .description img {
+      width: 80%;
+      margin-bottom: 30px; }
+
+  .early-access {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px; }
+    .early-access div {
+      width: 100%; }
+      .early-access div h1 {
+        font-size: 1.2em; }
+      .early-access div p {
+        width: 100%;
+        margin: 26px 0; }
+      .early-access div input {
+        margin-right: 0; }
+      .early-access div button {
+        margin-top: 10px;
+        width: 80%; }
+
+  .footer {
+    padding: 130px 40px 60px 40px; }
+    .footer div {
+      width: 100%;
+      margin-bottom: 30px; }
+      .footer div > img {
+        width: 160px;
+        height: auto; }
+      .footer div p {
+        font-size: 1em; }
+    .footer div:last-child {
+      margin-bottom: 0;
+      text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
